@@ -1,6 +1,7 @@
 import * as React from "react"
 import AboutMirax from "../components/home/about-mirax"
 import HomeHero from "../components/home/home-hero"
+import MiraxRobots from "../components/home/mirax-robots"
 import WhyOurRobots from "../components/home/why-our-robots"
 
 import Layout from "../components/layout"
@@ -13,6 +14,7 @@ const IndexPage = ({ location }) => {
       <HomeHero />
       <AboutMirax />
       <WhyOurRobots />
+      <MiraxRobots />
     </Layout>
   )
 }

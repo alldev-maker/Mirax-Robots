@@ -14,17 +14,21 @@ import {
   AdvantageIcon4,
   AdvantageIcon5,
   AdvantageIcon6,
+  DisinfectionRobotsImg,
   MenuFacebook,
   MenuFacebookActive,
   MenuInstagram,
   MenuInstagramActive,
   MenuYoutube,
   MenuYoutubeActive,
+  RestaurantRobotsImg,
   Robot1,
   Robot2,
   Robot3,
   Robot4,
   Robot5,
+  SecurityRobotsImg,
+  ServiceRobotsImg,
 } from "./imgImport"
 
 export const nav_menus = [
@@ -83,20 +87,20 @@ export const service_robots = [
 
 export const restaurant_robots = [
   {
-    name: "Daben",
-    to: "/daben",
-  },
-  {
     name: "Lea",
     to: "/lea",
   },
   {
-    name: "Bob",
-    to: "/bob",
-  },
-  {
     name: "Hugo",
     to: "/hugo",
+  },
+  {
+    name: "Ben",
+    to: "/ben",
+  },
+  {
+    name: "Daben",
+    to: "/daben",
   },
 ]
 
@@ -230,5 +234,36 @@ export const bottom_menu = [
     icon: <ContactsIcon />,
     name: "CONTACTS",
     path: "/contacts",
+  },
+]
+
+export const mirax_robots = [
+  {
+    img: ServiceRobotsImg,
+    title: "Service robots",
+    content:
+      "Promoters, consultants, guides, receptionists — just to name a few spheres where our service robots are used. Nothing can boost your sales and brand awareness better than a high-tech robot.",
+    to: "/",
+  },
+  {
+    img: RestaurantRobotsImg,
+    title: "Restaurant robots",
+    content:
+      "Incredible waiters who can surprise any guest and draw attention to your restaurant, hotel, or any other business.",
+    to: "/",
+  },
+  {
+    img: DisinfectionRobotsImg,
+    title: "Disinfection robots",
+    content:
+      "The world’s leading disinfection robots that not only effectively disinfect any facility but also interact with people as our service robots do. A perfect tool not only for business, but also for any government institution, as well as places of increased congestion of people.",
+    to: "/",
+  },
+  {
+    img: SecurityRobotsImg,
+    title: "Security robots",
+    content:
+      "Our robots are designed to provide non-stop security both indoors and outdoors — in any weather, day or night, they will protect you and your property.",
+    to: "/",
   },
 ]

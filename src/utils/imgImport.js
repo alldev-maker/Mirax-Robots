@@ -29,6 +29,14 @@ import advantageIcon4 from "../images/main/advantages_icon_d.png"
 import advantageIcon5 from "../images/main/advantages_icon_e.png"
 import advantageIcon6 from "../images/main/advantages_icon_f.png"
 
+import serviceRobots from "../images/main/service_robots.png"
+import restaurantRobots from "../images/main/restaurant_robots.png"
+import disinfectionRobots from "../images/main/disinfection_robots.png"
+import securityRobots from "../images/main/security_robots.png"
+
+import miraxRobotsTopShape from "../images/main/mirax_robots_top_shape.png"
+import miraxRobotsBottomShape from "../images/main/mirax_robots_bottom_shape.png"
+
 export const Logo = logo
 export const FooterLogo = footerLogo
 export const MainLogo = mainLogo
@@ -58,3 +66,11 @@ export const AdvantageIcon3 = advantageIcon3
 export const AdvantageIcon4 = advantageIcon4
 export const AdvantageIcon5 = advantageIcon5
 export const AdvantageIcon6 = advantageIcon6
+
+export const ServiceRobotsImg = serviceRobots
+export const RestaurantRobotsImg = restaurantRobots
+export const DisinfectionRobotsImg = disinfectionRobots
+export const SecurityRobotsImg = securityRobots
+
+export const MiraxRobotsTopShape = miraxRobotsTopShape
+export const MiraxRobotsBottomShape = miraxRobotsBottomShape
