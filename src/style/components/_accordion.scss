@@ -1,0 +1,88 @@
+.accordion {
+  transition: all 0.3s ease;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+
+  &.active {
+    .accordion__toggler {
+      .sign {
+        &::after {
+          transform: rotate(180deg);
+          width: 20px;
+          height: 12px;
+          background: url("../images/menu/icon_dropdown_default.svg") no-repeat
+            center;
+        }
+      }
+    }
+    .accordion__content {
+      max-height: 1000px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .accordion__toggler {
+    background-color: transparent;
+    border: none;
+    padding: 25px 10px;
+    &:hover {
+      .sign::after {
+        background: url("../images/menu/icon_dropdown_active.svg") no-repeat
+          center;
+      }
+    }
+    .question {
+      letter-spacing: 0.8px;
+      line-height: 48px;
+      font-size: 40px;
+      font-weight: 900;
+      letter-spacing: 0.4px;
+      line-height: 30px;
+      color: white;
+      @include mq(lg, max) {
+        font-size: 18px;
+        letter-spacing: 0.36px;
+        line-height: 26px;
+      }
+      &:hover {
+        color: #fa348b;
+      }
+    }
+    .sign {
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        top: -7.5px;
+        right: 0;
+        width: 20px;
+        height: 12px;
+        background: url("../images/menu/icon_dropdown_default.svg") no-repeat
+          center;
+        transition: transform 0.3s ease-in-out;
+      }
+    }
+  }
+
+  .accordion__content {
+    max-height: 0px;
+    overflow: hidden;
+    padding-left: 25px;
+    padding-right: 25px;
+    a {
+      font-size: 20px;
+      font-style: normal;
+      letter-spacing: 0.4px;
+      line-height: 30px;
+      color: white;
+      font-weight: 900;
+      @include mq(lg, max) {
+        font-size: 14px;
+        letter-spacing: 0.28px;
+        line-height: 22px;
+      }
+      &:hover {
+        color: #fa348b;
+      }
+    }
+  }
+}

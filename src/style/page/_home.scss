@@ -1,0 +1,93 @@
+.home-hero {
+  height: 1080px;
+  position: relative;
+  padding: 0;
+  margin-bottom: 60px;
+  @include mq("md", max) {
+    height: 460px;
+  }
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+  }
+  .bottom-shape {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+  }
+  .main-content {
+    max-width: 971px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    .main-logo {
+      margin-top: 50px;
+    }
+    .hero-text {
+      margin-top: 80px;
+      margin-bottom: 80px;
+      text-shadow: 0 20px 60px rgba(72, 5, 153, 0.5);
+      color: #ffffff;
+      font-size: 100px;
+      font-weight: 900;
+      line-height: 110px;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    @include mq("lg", max) {
+      .hero-text {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        text-shadow: 0 5px 20px rgba(72, 5, 153, 0.5);
+        font-size: 36px;
+        line-height: 40px;
+      }
+      .main-logo {
+        width: 100px;
+        height: 60px;
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.about-mirax {
+  .robot-item {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+  }
+}
+
+.why-our-robots {
+  .advantage-item {
+    max-width: 338px;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 100px;
+    @include mq(md, max) {
+      margin-bottom: 40px;
+    }
+    &__icon {
+      width: 60px;
+      height: 60px;
+      margin-top: -20px;
+      margin-right: 20px;
+      @include mq(md, max) {
+        margin-top: -12px;
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}

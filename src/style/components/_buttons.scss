@@ -1,0 +1,43 @@
+.btn {
+  &-menu {
+    background: transparent;
+    border: none;
+  }
+}
+.learn-more {
+  position: relative;
+  padding: 27px 110px 27px 60px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0 5px 30px #fa348b;
+  border-radius: 40px;
+  background-color: #fa348b;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 8px;
+    top: 47%;
+    right: 60px;
+    transform: translateY(-50%);
+    background-image: url("../images/main/button_arrow_default.svg");
+    background-repeat: no-repeat;
+  }
+  &:hover {
+    color: white;
+  }
+  @include mq(md, max) {
+    padding: 24px 70px 24px 35px;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 1.75px;
+    &::after {
+      right: 25px;
+    }
+  }
+}

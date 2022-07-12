@@ -1,0 +1,122 @@
+footer {
+  padding-top: 0;
+  padding-bottom: 0;
+  box-shadow: 0 -4px 10px rgba(153, 7, 246, 0.4);
+  background-image: linear-gradient(
+    to top,
+    #480599 0%,
+    #2b0a54 70%,
+    #2b0a54 100%
+  );
+  @include mq(sm) {
+    padding: 40px 0;
+    background: #0b0714;
+  }
+  .footer-logo {
+    width: 160px;
+    height: 94px;
+  }
+  .copy-right {
+    color: #595661;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.12px;
+    margin-left: 36px;
+  }
+  .footer-menu {
+    &__label {
+      position: relative;
+      font-size: 12px;
+      font-weight: 900;
+      font-style: normal;
+      letter-spacing: 1.33px;
+      line-height: 16px;
+      text-transform: uppercase;
+      color: #595661;
+      margin-bottom: 25px;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 21px;
+        height: 3px;
+        background-color: #595661;
+        opacity: 0.2;
+        bottom: -10px;
+      }
+      &.active {
+        color: $purple;
+      }
+    }
+  }
+  .nav-link {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.14px;
+    line-height: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    align-items: center;
+    svg {
+      margin-right: 8px;
+    }
+    &:hover {
+      color: $purple;
+      path {
+        fill: $purple;
+      }
+    }
+  }
+  .bottom-menu {
+    display: flex;
+    justify-content: center;
+    &__item {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 9px 16px;
+      border-left: 1px solid rgba(153, 7, 246, 0.3);
+      border-right: 1px solid rgba(153, 7, 246, 0.3);
+      height: 67px;
+      &:first-child {
+        border-left: none;
+      }
+      &:last-child {
+        border-right: none;
+      }
+      svg {
+        flex-shrink: 0;
+      }
+      a {
+        margin-top: 8px;
+        color: #fefefe;
+        font-size: 10px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.2px;
+      }
+      &.active {
+        &::before {
+          content: "";
+          position: absolute;
+          top: -9px;
+          border-left: 16.5px solid transparent;
+          border-right: 16.5px solid transparent;
+          border-bottom: 10px solid #2b0a54;
+        }
+        svg {
+          path {
+            fill: $purple;
+          }
+        }
+        a {
+          color: $purple;
+        }
+      }
+    }
+  }
+}

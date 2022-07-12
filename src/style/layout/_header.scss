@@ -1,0 +1,78 @@
+.header {
+  padding: 19px 0;
+  @include mq("md", max) {
+    height: auto;
+  }
+  &.active {
+    height: 1000px;
+    background-color: #0b0714;
+    opacity: 0.8;
+    z-index: 10;
+  }
+  .menu-open {
+    .container {
+      @include mq("xl") {
+        max-width: calc(100% - 160px);
+      }
+    }
+    .logo,
+    .btn-menu {
+      z-index: 1;
+    }
+    @include mq(md, max) {
+      .logo {
+        display: none;
+      }
+    }
+  }
+  .navbar {
+    padding: 0;
+    .col-sm-6 {
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-bottom: 25px;
+    }
+    .menu-label {
+      font-size: 66px;
+      font-weight: 900;
+      letter-spacing: 1.32px;
+      line-height: 72px;
+      color: white;
+      padding-bottom: 15px;
+      border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+      @include mq(lg, max) {
+        font-size: 36px;
+        letter-spacing: 0.72px;
+        line-height: 40px;
+      }
+    }
+    .contact-links {
+      padding: 25px 0;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+      .social-link {
+        padding: 0 20px;
+        @include mq(md, max) {
+          padding: 10px;
+        }
+      }
+      .write-us {
+        display: block;
+        padding-left: 20px;
+        margin-top: 30px;
+        font-size: 40px;
+        letter-spacing: 0.8px;
+        line-height: 48px;
+        color: white;
+        font-weight: 900;
+        @include mq(lg, max) {
+          font-size: 18px;
+          letter-spacing: 0.36px;
+          line-height: 26px;
+        }
+        &:hover {
+          color: $pink;
+        }
+      }
+    }
+  }
+}
